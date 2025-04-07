@@ -1,0 +1,48 @@
+<div class="bg-white px-4 sm:px-6 lg:px-8 py-8">
+  <div class="relative overflow-hidden bg-gradient-to-br from-primary via-secondary to-dark rounded-3xl mx-auto max-w-7xl border border-white/20">
+    <div class="absolute inset-0 bg-dots"></div>
+    <!-- Header integrado -->
+    <div class="px-6 py-6 flex justify-between items-center">
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/ar/" class="text-white font-bold text-xl">
+          Techmo
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-8 items-center">
+        {% for item in navigation.main %}
+        <a href="{{ item.url }}" class="text-white/80 hover:text-white">{{ item.text }}</a>
+        {% endfor %}
+        <a href="https://simulador.techmo.global" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-dark bg-white hover:bg-white/90">
+          Simular crédito
+        </a>
+      </nav>
+      <div class="flex items-center md:hidden">
+        <button type="button" class="text-white">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Contenido del hero -->
+    <div class="px-6 py-12 sm:px-12 sm:py-16 md:py-24 lg:py-32">
+  <div class="max-w-4xl">
+    <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold text-white leading-tight tracking-tight">
+      Un click, todos los créditos para tu auto.
+    </h1>
+    <p class="mt-6 text-xl md:text-2xl text-white/90 max-w-3xl">
+      Comparamos en segundos las mejores opciones de bancos y financiamiento propio para que tengas la tasa perfecta para vos.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+      <a href="https://simulador.techmo.global" class="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 border border-transparent text-base font-medium rounded-full text-dark bg-white hover:bg-white/90 transition-colors">
+        Simular mi crédito
+      </a>
+      <a href="https://ar.techmo.global" class="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 border border-white text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors">
+        Buscar mi auto
+      </a>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>

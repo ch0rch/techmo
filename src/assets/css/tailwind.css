@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados adicionales */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .bg-dots {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  /* Efecto neón para el borde */
+  .neon-border {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .neon-border::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #28E0CC, #326F78, #174247, #28E0CC);
+    background-size: 400%;
+    border-radius: inherit;
+    animation: neon-border-animate 6s linear infinite;
+  }
+  
+  .neon-border::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, #28E0CC, #326F78, #174247);
+    border-radius: inherit;
+  }
+  
+  @keyframes neon-border-animate {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}

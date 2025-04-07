@@ -1,0 +1,46 @@
+{
+    "main": [
+      {
+        "text": "Inicio",
+        "url": "/ar/"
+      },
+      {
+        "text": "Créditos Prendarios",
+        "url": "/ar/creditos-prendarios/"
+      },
+      {
+        "text": "Particulares",
+        "url": "/ar/particulares/"
+      },
+      {
+        "text": "Agencias",
+        "url": "/ar/agencias/"
+      },
+      {
+        "text": "Seguros",
+        "url": "/ar/seguros-para-autos/"
+      },
+      {
+        "text": "Prensa",
+        "url": "/ar/prensa/"
+      },
+      {
+        "text": "Contacto",
+        "url": "/ar/contacto/"
+      }
+    ],
+    "footer": [
+      {
+        "text": "Términos y Condiciones",
+        "url": "/ar/terminos-y-condiciones/"
+      },
+      {
+        "text": "Política de Privacidad",
+        "url": "/ar/politica-de-privacidad/"
+      },
+      {
+        "text": "Preguntas Frecuentes",
+        "url": "/ar/preguntas-frecuentes/"
+      }
+    ]
+  }

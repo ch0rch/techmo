@@ -1,0 +1,21 @@
+<div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+  {% if feature.image %}
+  <div class="aspect-w-16 aspect-h-9">
+    <img src="{{ feature.image }}" alt="{{ feature.title }}" class="w-full h-full object-cover">
+  </div>
+  {% endif %}
+  <div class="p-6">
+    <h3 class="text-xl font-semibold text-dark">{{ feature.title }}</h3>
+    <p class="mt-2 text-gray-600">{{ feature.description }}</p>
+    {% if feature.buttonText and feature.buttonUrl %}
+    <div class="mt-4">
+      <a href="{{ feature.buttonUrl }}" class="inline-flex items-center text-secondary hover:text-primary transition-colors duration-200">
+        {{ feature.buttonText }}
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>

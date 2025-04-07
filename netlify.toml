@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/"
+  to = "/ar/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ar/*"
+  to = "/ar/404"
+  status = 404

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  {% include "partials/meta.njk" %}
+  {% include "partials/styles.njk" %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/solutions-stack.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-900 antialiased">
+  {% if page.url != "/ar/" %}
+    {% include "components/header.njk" %}
+  {% endif %}
+  
+  <main id="main" class="min-h-screen">
+    {{ content | safe }}
+  </main>
+  
+  {% include "components/footer.njk" %}
+  {% include "partials/scripts.njk" %}
+</body>
+</html>
