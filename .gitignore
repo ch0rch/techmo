@@ -1,5 +1,29 @@
+# Dependencias
 node_modules/
-.env
-.DS_Store
-.vscode/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# Archivos de construcción
 dist/
+build/
+out/
+.next/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE/editor
+.idea/
+.vscode/
+*.swp
+*.swo
