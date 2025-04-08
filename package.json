@@ -4,7 +4,8 @@
     "description": "Sitio web de Techmo - Soluciones Fintech para el Mercado Automotor Argentino",
     "main": "index.js",
     "scripts": {
-        "build": "eleventy && npx postcss ./src/assets/css/tailwind.css -o ./dist/assets/css/styles.css --minify"
+        "build": "eleventy && npx postcss ./src/assets/css/tailwind.css -o ./dist/assets/css/styles.css --minify",
+        "start": "eleventy --serve & npx tailwindcss -i ./src/assets/css/tailwind.css -o ./dist/assets/css/styles.css --watch"
     },
     "keywords": [
         "techmo",
