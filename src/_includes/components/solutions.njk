@@ -1,302 +1,209 @@
-<section id="solutions-section" style="padding: 6rem 0; background-color: white;">
-  <div style="width: 100%; max-width: 1200px; margin: 0 auto; position: relative;">
-    <table style="width: 100%; border-collapse: collapse;">
-      <tr>
-        <!-- Columna izquierda (30% de ancho) -->
-        <td style="width: 30%; vertical-align: top; padding: 2rem;">
-          <div style="position: sticky; top: 2rem;">
-            <p style="color: #6b7280; font-size: 1rem; margin-bottom: 0.5rem; text-transform: uppercase;">NUESTRAS SOLUCIONES</p>
-            <h2 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 3rem; line-height: 1.2;">
-              Financiamiento<br>a medida
-            </h2>
-            
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="margin-bottom: 1.5rem;">
-                <a href="javascript:void(0);" onclick="showSolution('prendarios')" id="link-prendarios" style="display: flex; align-items: center; color: #00CED1; font-weight: 600; text-decoration: none; font-size: 1.125rem; transition: all 0.3s ease;">
-                  <span style="display: inline-block; width: 4px; height: 1.75rem; background-color: #00CED1; margin-right: 0.75rem; border-radius: 2px; transition: all 0.3s ease;"></span>
-                  Créditos Prendarios
-                </a>
-              </li>
-              <li style="margin-bottom: 1.5rem;">
-                <a href="javascript:void(0);" onclick="showSolution('particulares')" id="link-particulares" style="display: flex; align-items: center; color: #6b7280; text-decoration: none; font-size: 1.125rem; transition: all 0.3s ease;">
-                  <span style="display: inline-block; width: 4px; height: 1.75rem; background-color: transparent; margin-right: 0.75rem; border-radius: 2px; transition: all 0.3s ease;"></span>
-                  Compra y Venta entre Particulares
-                </a>
-              </li>
-              <li style="margin-bottom: 1.5rem;">
-                <a href="javascript:void(0);" onclick="showSolution('agencias')" id="link-agencias" style="display: flex; align-items: center; color: #6b7280; text-decoration: none; font-size: 1.125rem; transition: all 0.3s ease;">
-                  <span style="display: inline-block; width: 4px; height: 1.75rem; background-color: transparent; margin-right: 0.75rem; border-radius: 2px; transition: all 0.3s ease;"></span>
-                  Soluciones para Agencias
-                </a>
-              </li>
-            </ul>
-            
+<section id="solutions-section" class="py-16 md:py-24 bg-white">
+  <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+    <div class="flex flex-col md:flex-row">
+      <!-- Columna izquierda -->
+      <div class="w-full md:w-1/3 mb-10 md:mb-0 md:pr-8">
+        <div class="md:sticky md:top-24">
+          <p class="text-gray-500 text-sm uppercase mb-2">NUESTRAS SOLUCIONES</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 leading-tight">
+            Financiamiento<br>a medida
+          </h2>
+          
+          <ul class="space-y-6">
+            <li>
+              <a href="javascript:void(0);" onclick="showSolution('prendarios')" id="link-prendarios" class="flex items-center text-primary font-semibold text-lg transition-all">
+                <span class="inline-block w-1 h-7 bg-primary mr-3 rounded"></span>
+                Créditos Prendarios
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" onclick="showSolution('particulares')" id="link-particulares" class="flex items-center text-gray-500 text-lg transition-all">
+                <span class="inline-block w-1 h-7 bg-transparent mr-3 rounded"></span>
+                Compra y Venta entre Particulares
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" onclick="showSolution('agencias')" id="link-agencias" class="flex items-center text-gray-500 text-lg transition-all">
+                <span class="inline-block w-1 h-7 bg-transparent mr-3 rounded"></span>
+                Soluciones para Agencias
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Columna derecha -->
+      <div class="w-full md:w-2/3">
+        <!-- Contenedor para las tarjetas -->
+        <div id="solutions-cards-container" class="h-[150vh] md:h-[120vh] relative">
+          <!-- Contenedor para mantener las tarjetas en posición fija -->
+          <div id="cards-viewport" class="sticky top-24 h-auto md:h-[400px]">
+            <!-- Tarjeta 1: Créditos Prendarios -->
+            <div id="solution-prendarios" class="solution-card rounded-3xl border-2 border-primary bg-[#f0ffff] shadow-xl p-0 overflow-hidden opacity-100 transition-opacity duration-500 mb-6 md:mb-0 md:absolute md:inset-0">
+              <div class="absolute top-0 right-0 w-[200px] h-[200px] opacity-10 z-0">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#00CED1" d="M42.8,-65.2C54.9,-56.3,63.7,-43.2,69.2,-28.9C74.8,-14.6,77.2,0.9,73.3,14.7C69.5,28.5,59.5,40.5,47.3,49.8C35.1,59.1,20.7,65.6,5.9,68.1C-8.9,70.6,-24.1,69.1,-37.4,62.4C-50.7,55.7,-62.1,43.8,-68.1,29.6C-74.1,15.4,-74.7,-1.1,-70.2,-15.6C-65.7,-30.1,-56.1,-42.6,-44.1,-51.5C-32.1,-60.4,-17.8,-65.7,-1.7,-63.3C14.3,-60.9,30.7,-74.1,42.8,-65.2Z" transform="translate(100 100)" />
+                </svg>
+              </div>
+              
+              <div class="flex flex-col md:flex-row h-full relative z-1">
+                <!-- Columna izquierda de la tarjeta -->
+                <div class="w-full md:w-2/5 p-6 md:p-10 flex flex-col justify-center">
+                  <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6 leading-tight">Créditos Prendarios</h3>
+                  <a href="/ar/creditos-prendarios/" class="inline-flex items-center px-4 py-3 rounded-full bg-primary text-white font-medium transition-all shadow-md hover:shadow-lg">
+                    Conocer más
+                    <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                
+                <!-- Columna derecha de la tarjeta -->
+                <div class="w-full md:w-3/5 p-6 md:p-10 bg-white rounded-b-3xl md:rounded-b-none md:rounded-r-3xl flex flex-col justify-center">
+                  <!-- Icono decorativo -->
+                  <div class="absolute top-6 right-6">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9H21M7 15H8M12 15H13M17 15H18M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  
+                  <p class="text-base md:text-lg text-gray-600 mb-4 leading-relaxed">
+                    Accedé a las mejores tasas del mercado con nuestro comparador de créditos prendarios.
+                  </p>
+                  <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                    Analizamos tu perfil y te ofrecemos las opciones que mejor se adaptan a tus necesidades.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas 2 y 3 similares pero con opacity-0 -->
+            <!-- Tarjeta 2: Compra y Venta entre Particulares -->
+            <div id="solution-particulares" class="solution-card rounded-3xl border-2 border-primary bg-[#f0ffff] shadow-xl p-0 overflow-hidden opacity-0 transition-opacity duration-500 mb-6 md:mb-0 md:absolute md:inset-0">
+              <div class="absolute top-0 right-0 w-[200px] h-[200px] opacity-10 z-0">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#00CED1" d="M42.8,-65.2C54.9,-56.3,63.7,-43.2,69.2,-28.9C74.8,-14.6,77.2,0.9,73.3,14.7C69.5,28.5,59.5,40.5,47.3,49.8C35.1,59.1,20.7,65.6,5.9,68.1C-8.9,70.6,-24.1,69.1,-37.4,62.4C-50.7,55.7,-62.1,43.8,-68.1,29.6C-74.1,15.4,-74.7,-1.1,-70.2,-15.6C-65.7,-30.1,-56.1,-42.6,-44.1,-51.5C-32.1,-60.4,-17.8,-65.7,-1.7,-63.3C14.3,-60.9,30.7,-74.1,42.8,-65.2Z" transform="translate(100 100)" />
+                </svg>
+              </div>
+              
+              <div class="flex flex-col md:flex-row h-full relative z-1">
+                <!-- Columna izquierda de la tarjeta -->
+                <div class="w-full md:w-2/5 p-6 md:p-10 flex flex-col justify-center">
+                  <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6 leading-tight">Compra y Venta entre Particulares</h3>
+                  <a href="/ar/compra-venta-particulares/" class="inline-flex items-center px-4 py-3 rounded-full bg-primary text-white font-medium transition-all shadow-md hover:shadow-lg">
+                    Conocer más
+                    <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                
+                <!-- Columna derecha de la tarjeta -->
+                <div class="w-full md:w-3/5 p-6 md:p-10 bg-white rounded-b-3xl md:rounded-b-none md:rounded-r-3xl flex flex-col justify-center">
+                  <!-- Icono decorativo -->
+                  <div class="absolute top-6 right-6">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9H21M7 15H8M12 15H13M17 15H18M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  
+                  <p class="text-base md:text-lg text-gray-600 mb-4 leading-relaxed">
+                    Te ayudamos a encontrar el auto de tus sueños o a vender el tuyo de forma segura y rápida.
+                  </p>
+                  <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                    Contamos con un equipo de expertos que te asesorarán en todo el proceso.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3: Soluciones para Agencias -->
+            <div id="solution-agencias" class="solution-card rounded-3xl border-2 border-primary bg-[#f0ffff] shadow-xl p-0 overflow-hidden opacity-0 transition-opacity duration-500 mb-6 md:mb-0 md:absolute md:inset-0">
+              <div class="absolute top-0 right-0 w-[200px] h-[200px] opacity-10 z-0">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#00CED1" d="M42.8,-65.2C54.9,-56.3,63.7,-43.2,69.2,-28.9C74.8,-14.6,77.2,0.9,73.3,14.7C69.5,28.5,59.5,40.5,47.3,49.8C35.1,59.1,20.7,65.6,5.9,68.1C-8.9,70.6,-24.1,69.1,-37.4,62.4C-50.7,55.7,-62.1,43.8,-68.1,29.6C-74.1,15.4,-74.7,-1.1,-70.2,-15.6C-65.7,-30.1,-56.1,-42.6,-44.1,-51.5C-32.1,-60.4,-17.8,-65.7,-1.7,-63.3C14.3,-60.9,30.7,-74.1,42.8,-65.2Z" transform="translate(100 100)" />
+                </svg>
+              </div>
+              
+              <div class="flex flex-col md:flex-row h-full relative z-1">
+                <!-- Columna izquierda de la tarjeta -->
+                <div class="w-full md:w-2/5 p-6 md:p-10 flex flex-col justify-center">
+                  <h3 class="text-2xl md:text-3xl font-bold text-primary mb-6 leading-tight">Soluciones para Agencias</h3>
+                  <a href="/ar/soluciones-agencias/" class="inline-flex items-center px-4 py-3 rounded-full bg-primary text-white font-medium transition-all shadow-md hover:shadow-lg">
+                    Conocer más
+                    <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                
+                <!-- Columna derecha de la tarjeta -->
+                <div class="w-full md:w-3/5 p-6 md:p-10 bg-white rounded-b-3xl md:rounded-b-none md:rounded-r-3xl flex flex-col justify-center">
+                  <!-- Icono decorativo -->
+                  <div class="absolute top-6 right-6">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9H21M7 15H8M12 15H13M17 15H18M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  
+                  <p class="text-base md:text-lg text-gray-600 mb-4 leading-relaxed">
+                    Ofrecemos soluciones de financiamiento a medida para agencias de autos.
+                  </p>
+                  <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                    Impulsa tus ventas y ofrece a tus clientes las mejores opciones de crédito.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </td>
+        </div>
         
-        <!-- Columna derecha (70% de ancho) -->
-        <td style="width: 70%; vertical-align: top; padding: 2rem;">
-          <!-- Contenedor para las tarjetas con altura fija para el scroll -->
-          <div id="solutions-cards-container" style="height: 150vh; position: relative;">
-            <!-- Contenedor para mantener las tarjetas en posición fija -->
-            <div id="cards-viewport" style="position: sticky; top: 2rem; height: 400px;">
-              <!-- Tarjeta 1: Créditos Prendarios -->
-              <div id="solution-prendarios" class="solution-card" data-index="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #f0ffff; border-radius: 1.5rem; border: 2px solid #00CED1; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); padding: 0; overflow: hidden; opacity: 1; transition: opacity 0.5s ease;">
-                <!-- Fondo decorativo SVG -->
-                <div style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; opacity: 0.1; z-index: 0;">
-                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#00CED1" d="M42.8,-65.2C54.9,-56.3,63.7,-43.2,69.2,-28.9C74.8,-14.6,77.2,0.9,73.3,14.7C69.5,28.5,59.5,40.5,47.3,49.8C35.1,59.1,20.7,65.6,5.9,68.1C-8.9,70.6,-24.1,69.1,-37.4,62.4C-50.7,55.7,-62.1,43.8,-68.1,29.6C-74.1,15.4,-74.7,-1.1,-70.2,-15.6C-65.7,-30.1,-56.1,-42.6,-44.1,-51.5C-32.1,-60.4,-17.8,-65.7,-1.7,-63.3C14.3,-60.9,30.7,-74.1,42.8,-65.2Z" transform="translate(100 100)" />
-                  </svg>
-                </div>
-                
-                <div style="display: flex; height: 100%; position: relative; z-index: 1;">
-                  <!-- Columna izquierda de la tarjeta (40%) -->
-                  <div style="width: 40%; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
-                    <h3 style="font-size: 2.5rem; font-weight: 700; color: #00CED1; margin-bottom: 1.5rem; line-height: 1.2;">Créditos Prendarios</h3>
-                    <a href="/ar/creditos-prendarios/" style="display: inline-flex; align-items: center; padding: 0.875rem 1.75rem; border: none; font-size: 1rem; font-weight: 500; border-radius: 9999px; color: white; background-color: #00CED1; transition: all 0.3s ease; text-decoration: none; width: fit-content; box-shadow: 0 4px 6px rgba(0, 206, 209, 0.25);">
-                      Conocer más
-                      <svg style="margin-left: 0.5rem; height: 1.25rem; width: 1.25rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </div>
-                  
-                  <!-- Columna derecha de la tarjeta (60%) -->
-                  <div style="width: 60%; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; background-color: white; border-top-right-radius: 1.5rem; border-bottom-right-radius: 1.5rem;">
-                    <!-- Icono decorativo -->
-                    <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
-                      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 9H21M7 15H8M12 15H13M17 15H18M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="#00CED1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </div>
-                    
-                    <p style="font-size: 1.125rem; color: #4B5563; line-height: 1.6; margin-bottom: 1rem;">
-                      Accedé a las mejores tasas del mercado con nuestro comparador de créditos prendarios.
-                    </p>
-                    <p style="font-size: 1.125rem; color: #4B5563; line-height: 1.6;">
-                      Analizamos tu perfil y te ofrecemos las opciones que mejor se adaptan a tus necesidades.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Tarjeta 2: Compra y Venta entre Particulares -->
-              <div id="solution-particulares" class="solution-card" data-index="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #f5f3ff; border-radius: 1.5rem; border: 2px solid #4F46E5; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); padding: 0; overflow: hidden; opacity: 0; transition: opacity 0.5s ease;">
-                <!-- Fondo decorativo SVG -->
-                <div style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; opacity: 0.1; z-index: 0;">
-                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4F46E5" d="M47.7,-73.2C62.1,-65.3,74.5,-52.6,79.4,-37.5C84.3,-22.4,81.7,-5,76.5,10.2C71.3,25.4,63.5,38.5,52.4,47.9C41.3,57.3,26.9,63,11.2,69.5C-4.5,76,-21.4,83.3,-35.2,79.9C-49,76.5,-59.6,62.4,-67.5,47.2C-75.4,32,-80.5,15.8,-79.9,0C-79.3,-15.8,-73,-31.5,-63,-44.3C-53,-57.1,-39.3,-66.9,-24.9,-74.5C-10.5,-82.1,4.6,-87.5,19.8,-85.1C35,-82.7,50.3,-72.5,47.7,-73.2Z" transform="translate(100 100)" />
-                  </svg>
-                </div>
-                
-                <div style="display: flex; height: 100%; position: relative; z-index: 1;">
-                  <!-- Columna izquierda de la tarjeta (40%) -->
-                  <div style="width: 40%; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
-                    <h3 style="font-size: 2.5rem; font-weight: 700; color: #4F46E5; margin-bottom: 1.5rem; line-height: 1.2;">Compra y Venta entre Particulares</h3>
-                    <a href="/ar/particulares/" style="display: inline-flex; align-items: center; padding: 0.875rem 1.75rem; border: none; font-size: 1rem; font-weight: 500; border-radius: 9999px; color: white; background-color: #4F46E5; transition: all 0.3s ease; text-decoration: none; width: fit-content; box-shadow: 0 4px 6px rgba(79, 70, 229, 0.25);">
-                      Ver opciones
-                      <svg style="margin-left: 0.5rem; height: 1.25rem; width: 1.25rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </div>
-                  
-                  <!-- Columna derecha de la tarjeta (60%) -->
-                  <div style="width: 60%; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; background-color: white; border-top-right-radius: 1.5rem; border-bottom-right-radius: 1.5rem;">
-                    <!-- Icono decorativo -->
-                    <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
-                      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17 20H7M17 20C18.1046 20 19 19.1046 19 18V9.41421C19 9.149 18.8946 8.89464 18.7071 8.70711L13.2929 3.29289C13.1054 3.10536 12.851 3 12.5858 3H6C4.89543 3 4 3.89543 4 5V18C4 19.1046 4.89543 20 6 20H7M17 20H7M9 9H10M9 13H10M9 17H10" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </div>
-                    
-                    <p style="font-size: 1.125rem; color: #4B5563; line-height: 1.6; margin-bottom: 1rem;">
-                      Conectamos compradores y vendedores con financiamiento asegurado y procesos seguros.
-                    </p>
-                    <p style="font-size: 1.125rem; color: #4B5563; line-height: 1.6;">
-                      Facilitamos la transacción con verificaciones y garantías para ambas partes.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Tarjeta 3: Soluciones para Agencias -->
-              <div id="solution-agencias" class="solution-card" data-index="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #f3f4f6; border-radius: 1.5rem; border: 2px solid #111827; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); padding: 0; overflow: hidden; opacity: 0; transition: opacity 0.5s ease;">
-                <!-- Fondo decorativo SVG -->
-                <div style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; opacity: 0.1; z-index: 0;">
-                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#111827" d="M39.9,-65.7C51.1,-58.5,59.5,-46.6,65.8,-33.5C72.1,-20.4,76.3,-6.1,74.8,7.7C73.3,21.5,66.1,34.8,56.1,44.9C46.1,55,33.3,61.9,19.7,66.6C6.1,71.3,-8.3,73.8,-22.7,71.3C-37.1,68.8,-51.5,61.3,-60.3,49.6C-69.1,37.9,-72.3,22,-73.4,6.5C-74.5,-9,-73.5,-24.1,-66.6,-35.8C-59.7,-47.5,-46.9,-55.8,-33.9,-62C-20.9,-68.2,-7.7,-72.3,4.3,-79.1C16.3,-85.9,32.6,-95.4,39.9,-65.7Z" transform="translate(100 100)" />
-                  </svg>
-                </div>
-                
-                <div style="display: flex; height: 100%; position: relative; z-index: 1;">
-                  <!-- Columna izquierda de la tarjeta (40%) -->
-                  <div style="width: 40%; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
-                    <h3 style="font-size: 2.5rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem; line-height: 1.2;">Soluciones para Agencias</h3>
-                    <a href="/ar/agencias/" style="display: inline-flex; align-items: center; padding: 0.875rem 1.75rem; border: none; font-size: 1rem; font-weight: 500; border-radius: 9999px; color: white; background-color: #111827; transition: all 0.3s ease; text-decoration: none; width: fit-content; box-shadow: 0 4px 6px rgba(17, 24, 39, 0.25);">
-                      Para agencias
-                      <svg style="margin-left: 0.5rem; height: 1.25rem; width: 1.25rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </div>
-                  
-                  <!-- Columna derecha de la tarjeta (60%) -->
-                  <div style="width: 60%; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; background-color: white; border-top-right-radius: 1.5rem; border-bottom-right-radius: 1.5rem;">
-                    <!-- Icono decorativo -->
-                    <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
-                      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19Z" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15 19V7C15 5.89543 14.1046 5 13 5H11C9.89543 5 9 5.89543 9 7V13" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M21 19V4C21 2.89543 20.1046 2 19 2H17C15.8954 2 15 2.89543 15 4V7" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </div>
-                    
-                    <p style="font-size: 1.125rem; color: #4B5563; line-height: 1.6; margin-bottom: 1rem;">
-                      Potenciá tus ventas con nuestro dashboard y herramientas exclusivas para concesionarios.
-                    </p>
-                    <p style="font-size: 1.125rem; color: #4B5563; line-height: 1.6;">
-                      Ofrecé financiamiento al instante y brindá una experiencia superior a tus clientes.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Logos de bancos -->
+        <div class="mt-12">
+          <p class="text-gray-500 text-sm font-medium mb-4">Trabajamos con las principales entidades financieras:</p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+            <img src="/assets/images/santander.png" alt="Banco Santander" class="h-10 object-contain">
+            <img src="/assets/images/bbva.png" alt="BBVA" class="h-10 object-contain">
+            <img src="/assets/images/supervielle.png" alt="Supervielle" class="h-10 object-contain">
+            <img src="/assets/images/mila.png" alt="Mila" class="h-10 object-contain">
           </div>
-          <!-- Logos de bancos -->
-<div style="margin-top: 3rem;">
-  <p style="color: #6b7280; font-size: 0.875rem; margin-bottom: 1rem; font-weight: 500;">Trabajamos con las principales entidades financieras:</p>
-  <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: space-between;">
-    <img src="/assets/images/santander.png" alt="Banco Santander" style="height: 40px; max-width: 100px; object-fit: contain;">
-    <img src="/assets/images/bbva.png" alt="BBVA" style="height: 40px; max-width: 100px; object-fit: contain;">
-    <img src="/assets/images/supervielle.png" alt="Supervielle" style="height: 40px; max-width: 100px; object-fit: contain;">
-    <img src="/assets/images/mila.png" alt="Mila" style="height: 40px; max-width: 100px; object-fit: contain;">
-  </div>
-</div>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const solutionLinks = {
-        'prendarios': document.getElementById('link-prendarios'),
-        'particulares': document.getElementById('link-particulares'),
-        'agencias': document.getElementById('link-agencias')
-      };
-      
-      const solutionCards = document.querySelectorAll('.solution-card');
-      const solutionsContainer = document.getElementById('solutions-cards-container');
-      const solutionsSection = document.getElementById('solutions-section');
-      
-      // Altura total del contenedor dividida por el número de tarjetas
-      const cardCount = solutionCards.length;
-      const cardHeight = solutionsContainer.offsetHeight / cardCount;
-      
-      // Función para mostrar una solución específica
-      window.showSolution = function(solutionId) {
-        // Resetear todos los enlaces
-        Object.values(solutionLinks).forEach(link => {
-          link.style.color = '#6b7280';
-          link.style.fontWeight = 'normal';
-          link.querySelector('span').style.backgroundColor = 'transparent';
-        });
-        
-        // Activar el enlace correspondiente
-        solutionLinks[solutionId].style.color = '#00CED1';
-        solutionLinks[solutionId].style.fontWeight = '600';
-        solutionLinks[solutionId].querySelector('span').style.backgroundColor = '#00CED1';
-        
-        // Mostrar la tarjeta correspondiente
-        solutionCards.forEach(card => {
-          const cardId = card.id.replace('solution-', '');
-          card.style.opacity = (cardId === solutionId) ? '1' : '0';
-        });
-      }
-      
-      // Función para actualizar las tarjetas basadas en el scroll
-      function updateCardsOnScroll() {
-        // Obtener la posición de scroll relativa a la sección
-        const sectionRect = solutionsSection.getBoundingClientRect();
-        const containerRect = solutionsContainer.getBoundingClientRect();
-        
-        // Si la sección no está visible, no hacer nada
-        if (containerRect.bottom < 0 || containerRect.top > window.innerHeight) {
-          return;
-        }
-        
-        // Calcular el progreso del scroll dentro del contenedor (0 a 1)
-        // Ajustamos para que comience un poco después del inicio y termine un poco antes del final
-        const startOffset = containerRect.height * 0.1; // 10% del inicio
-        const endOffset = containerRect.height * 0.1;   // 10% del final
-        
-        const scrollPosition = Math.max(0, -containerRect.top);
-        const adjustedHeight = containerRect.height - startOffset - endOffset;
-        
-        const scrollProgress = Math.max(0, Math.min(1, 
-          (scrollPosition - startOffset) / adjustedHeight
-        ));
-        
-        // Calcular qué tarjeta debe estar activa basada en el progreso
-        const activeIndex = Math.min(
-          cardCount - 1, 
-          Math.floor(scrollProgress * cardCount)
-        );
-        
-        // Actualizar la opacidad de cada tarjeta
-        solutionCards.forEach((card, index) => {
-          if (index === activeIndex) {
-            card.style.opacity = '1';
-            // Activar el enlace correspondiente
-            const solutionId = card.id.replace('solution-', '');
-            
-            // Actualizar los enlaces sin llamar a showSolution para evitar bucles
-            Object.values(solutionLinks).forEach(link => {
-              link.style.color = '#6b7280';
-              link.style.fontWeight = 'normal';
-              link.querySelector('span').style.backgroundColor = 'transparent';
-            });
-            
-            solutionLinks[solutionId].style.color = '#00CED1';
-            solutionLinks[solutionId].style.fontWeight = '600';
-            solutionLinks[solutionId].querySelector('span').style.backgroundColor = '#00CED1';
-          } else {
-            card.style.opacity = '0';
-          }
-        });
-      }
-      
-      // Escuchar eventos de scroll
-      window.addEventListener('scroll', updateCardsOnScroll);
-      
-      // Llamar a la función una vez para inicializar
-      updateCardsOnScroll();
-      
-      // También permitir la navegación por clic
-      Object.entries(solutionLinks).forEach(([solutionId, link]) => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          // Encontrar el índice de la tarjeta
-          const card = document.getElementById('solution-' + solutionId);
-          const index = parseInt(card.getAttribute('data-index'));
-          
-          // Calcular la posición de scroll para esta tarjeta
-          const scrollTarget = window.scrollY + solutionsSection.getBoundingClientRect().top + 
-                              startOffset + ((index + 0.5) * (adjustedHeight / cardCount));
-          
-          // Hacer scroll suavemente a esa posición
-          window.scrollTo({
-            top: scrollTarget,
-            behavior: 'smooth'
-          });
-          
-          // Actualizar la UI inmediatamente
-          showSolution(solutionId);
-        });
+    function showSolution(solutionId) {
+      // Desactiva todos los links
+      document.querySelectorAll('#solutions-section ul li a').forEach(link => {
+        link.classList.remove('text-primary', 'font-semibold');
+        link.classList.add('text-gray-500');
+        link.querySelector('span').classList.remove('bg-primary');
+        link.querySelector('span').classList.add('bg-transparent');
       });
+
+      // Activa el link correspondiente
+      const activeLink = document.getElementById('link-' + solutionId);
+      activeLink.classList.remove('text-gray-500');
+      activeLink.classList.add('text-primary', 'font-semibold');
+      activeLink.querySelector('span').classList.remove('bg-transparent');
+      activeLink.querySelector('span').classList.add('bg-primary');
+
+      // Oculta todas las tarjetas
+      document.querySelectorAll('.solution-card').forEach(card => {
+        card.classList.add('opacity-0');
+        card.classList.remove('opacity-100');
+      });
+
+      // Muestra la tarjeta correspondiente
+      const activeCard = document.getElementById('solution-' + solutionId);
+      activeCard.classList.remove('opacity-0');
+      activeCard.classList.add('opacity-100');
+    }
+
+    // Inicialización: Muestra la primera solución al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+      showSolution('prendarios');
     });
   </script>
 </section>
